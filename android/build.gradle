@@ -16,6 +16,15 @@ allprojects {
         google()
         mavenCentral()
     }
+    
+    // Đoạn cấu hình ép dự án dùng đúng phiên bản thư viện AndroidX
+    configurations.all {
+        resolutionStrategy {
+            force "androidx.activity:activity-ktx:1.8.2"
+            force "androidx.fragment:fragment-ktx:1.6.2"
+            force "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+        }
+    }
 }
 
 rootProject.buildDir = '../build'
