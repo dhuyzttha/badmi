@@ -25,5 +25,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/sample/
+  # Đã comment/vô hiệu hóa khai báo thư mục assets ảo để tránh lỗi build
+  # assets:
+  #   - assets/sample/
