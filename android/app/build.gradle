@@ -67,9 +67,6 @@ flutter {
 }
 
 dependencies {
-    // Đã sửa lại cách gọi biến để tương thích với Gradle 8.2+
+    // Chỉ giữ lại Kotlin, để Flutter tự quyết định phiên bản các thư viện AndroidX
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${rootProject.ext.kotlin_version}"
-    implementation "androidx.activity:activity-ktx:1.8.2"
-    implementation "androidx.fragment:fragment-ktx:1.6.2"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
 }
