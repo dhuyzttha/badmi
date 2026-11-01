@@ -9,7 +9,9 @@ import android.provider.OpenableColumns
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
-import io.flutter.embedding.android.FlutterActivity
+
+// ĐÃ SỬA: Import FlutterFragmentActivity thay vì FlutterActivity
+import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 import kotlinx.coroutines.CoroutineScope
@@ -20,7 +22,8 @@ import java.io.File
 import java.io.FileOutputStream
 import java.io.InputStream
 
-class MainActivity : FlutterActivity() {
+// ĐÃ SỬA: Kế thừa từ FlutterFragmentActivity
+class MainActivity : FlutterFragmentActivity() {
     private val CHANNEL = "com.hawkeye.badminton/file_picker"
     private var pendingResult: MethodChannel.Result? = null
 
